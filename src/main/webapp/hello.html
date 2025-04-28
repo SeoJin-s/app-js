@@ -37,6 +37,76 @@
 			    console.log(name[1]);	// 디
 			    console.log('문자열 길이:',name.length); 
 			    
+			    console.log(4/2);
+			    console.log(5/2);
+			    console.log(5.0/2);
+			   
+			    let w = true;
+			    let q = false;
+			    console.log(w);
+			    console.log(q);
+			    
+			    w = 10 > 100;
+			    console.log(w); // fales
+			    
+			    console.log('===연산자:', '777' === 777); 	 // 정확한 연산	
+			    console.log('==연산자:', '777' == 777);	 // 느슨한 연산 : ex) 자동형 변환 후 연산
+			    
+			    console.log('!==연산자:', '777' !== 777); 	 // 정확한 연산	
+			    console.log('!=연산자:', '777' != 777);		//  느슨한 연산
+			    
+			    // 피연산자가 같은 자료형임을 확신하면 느슨한 연산자를 사용해도 상관없다.
+			    
+			    let a = 10;
+			    let s = 0;
+			    if(typeof(a) === 'number') {
+			    	  s = a * 2;
+			    }
+			    
+			    a = 'hello';
+			    if(typeof(a) === 'number') {
+					 s = a * 10;
+			    }
+			    
+			    console.log('s:', s);	// ?
+			    
+			    		
+				
+			    console.log(typeof('7'));
+			    console.log(typeof(7));
+			    console.log(typeof(false));
+			    let mini;	
+			    console.log(typeof(mini));
+			    
+			    function add(c,v) {
+					return c_v;
+			    };
+			    
+			    console.log(typeof(add));
+			    
+			    let obj = new Object();
+			    console.log(typeof(obj));
+			    console.log({});
+			    
+			    let arr = [];
+			    console.log(typeof(arr));
+			    
+			    /*
+			     출력방법
+			     1) 콘솔에 출력 ( 디버깅 & 로그) : cosole.log()
+			     2) 경고창에 출력 : alert() < 지금은 사용하지않는다
+			     3) html 페이지에 출력 : document.write() <- 쓰지않는다.
+			     4) input value 안에 출력
+			     5) 특정 태그 안에 출력
+			    */
+			    
+			     console.log('test');
+			     alert('test');
+			     document.write('<p>test</p>');
+			     // <input type="text" name="x" id="x" value=""> 
+			     // <div id="y"></div>
+			     document.getElementById('x').value = 'test';	// <input type="text" name="x" id="x" value=""> 
+			     document.getElementById('y').innerHTML = 'test'; // <div id="y"></div>
 			</script>
 </head>
 <body>
